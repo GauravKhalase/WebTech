@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Tag</title>
+    <style>
+        .heading{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heading">
+            <h1>Marquee Tag</h1>
+            <h2>Seven Wonders of the world</h2>
+        </div>
+        <marquee scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+            <img height="300px" width="500px" src="https://imgs.search.brave.com/lQxBQdwXI44EgS0-l0uA7sjWpBseZv5UqsRIlnxWX7w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0wzUmhhaTF0/WVdoaGJDNXFjR2Np/TENKbFpHbDBjeUk2/ZXlKeVpYTnBlbVVp/T25zaWQybGtkR2dp/T2pneU9IMTlmUT09" alt="">
+            <img height="300px" width="500px" src="https://imgs.search.brave.com/XF7Y_lkAEFIw4ROJ3A1DxiwZkILo4DM_BVTMSRaEpn8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5oc3dzdGF0aWMu/Y29tL2V5SmlkV05y/WlhRaU9pSmpiMjUw/Wlc1MExtaHpkM04w/WVhScFl5NWpiMjBp/TENKclpYa2lPaUpu/YVdaY0wyTnZiRzl6/YzJWMWJTNXFjR2Np/TENKbFpHbDBjeUk2/ZXlKeVpYTnBlbVVp/T25zaWQybGtkR2dp/T2pneU9IMTlmUT09" alt="">
+            <img height="300px" width="500px" src="https://cdn.thecollector.com/wp-content/uploads/2021/12/great-wall-china-national-geographic.jpg?width=1200&quality=55" alt="">
+            <img height="300px" width="500px" src="https://cdn.thecollector.com/wp-content/uploads/2021/12/christ-the-redeemer-statue-rio-1-scaled.jpg?width=1200&quality=55" alt="">
+            <img height="300px" width="500px" src="https://cdn.thecollector.com/wp-content/uploads/2021/12/machu-picchu-world-wonder.jpg?width=1200&quality=55" alt="">
+            <img height="300px" width="500px" src="https://cdn.thecollector.com/wp-content/uploads/2021/12/petra-jordan-world-wonder-scaled-1.jpg?width=1200&quality=55" alt="">
+        </marquee>
+    </div>
+    <div>
+        <marquee scrollamount="10">I am scrolling</marquee>
+        <marquee behavior="scroll">I am scrolling by default</marquee>
+        <marquee behavior="slide"> I am sliding</marquee>
+        <marquee behavior="alternate">I am scrolling and also sliding</marquee>
+    </div>
+    <div>
+        <marquee direction="left">I am moving towards left direction</marquee>
+        <marquee direction="right" id="">I am moving towards right direction</marquee>
+        <marquee direction="up">I am moving towards up direction</marquee>
+        <marquee direction="down">I am moving towards down direction</marquee>
+    </div>
+    <div>
+        <marquee behavior="" direction="right">
+            <img src="https://imgs.search.brave.com/EI0CltB0nJ4-R8dN4FBZydXQtkcksa4ZrIoKby9Wg78/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy82/VHBvTEFSa2MuZ2lm.gif" alt="">
+            <img src="https://imgs.search.brave.com/EI0CltB0nJ4-R8dN4FBZydXQtkcksa4ZrIoKby9Wg78/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy82/VHBvTEFSa2MuZ2lm.gif" alt="">
+            <img src="https://imgs.search.brave.com/EI0CltB0nJ4-R8dN4FBZydXQtkcksa4ZrIoKby9Wg78/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy82/VHBvTEFSa2MuZ2lm.gif" alt="">
+            <img src="https://imgs.search.brave.com/EI0CltB0nJ4-R8dN4FBZydXQtkcksa4ZrIoKby9Wg78/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy82/VHBvTEFSa2MuZ2lm.gif" alt="">
+            <img src="https://imgs.search.brave.com/EI0CltB0nJ4-R8dN4FBZydXQtkcksa4ZrIoKby9Wg78/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy82/VHBvTEFSa2MuZ2lm.gif" alt="">
+            <img height="200px" width="200px"  src="https://imgs.search.brave.com/EI0CltB0nJ4-R8dN4FBZydXQtkcksa4ZrIoKby9Wg78/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LWxpYnJhcnku/Y29tL2ltYWdlcy82/VHBvTEFSa2MuZ2lm.gif" alt="">
+        </marquee>
+    </div>
+    <div>
+        <marquee behavior="" direction="right">
+            <img src="https://imgs.search.brave.com/33yQzDqbt_l-_i2Q5jVc-CSvqErOisQTQ1NMwnBekMo/rs:fit:860:0:0/g:ce/aHR0cDovL3d3dy5j/bGlwYXJ0YmVzdC5j/b20vY2xpcGFydHMv/eWlvL2VLcS95aW9l/S3FYcFQuZ2lm.gif" alt="">
+        </marquee>
+    </div>
+    <div>
+        <marquee scrollamount="10" bgcolor="lightgray">This is marquee tag 1</marquee>
+        <marquee scrollamount="10" bgcolor="lightgray" vspace="20px" hspace="100px">This is marquee tag 2</marquee>
+        <marquee scrollamount="10" bgcolor="lightgray">This is marquee tag 3</marquee>
+        <div align="center">
+            <marquee style="line-height: 100px;" scrollamount="10" bgcolor="lightgray" width="50%" height="100px" >This is marquee tag 4</marquee>
+        </div>
+       
+    </div>
+</body>
+</html>

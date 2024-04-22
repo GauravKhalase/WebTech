@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <style>
+      .headings {
+        background-color: aqua;
+        width: 300px;
+      }
+      #head1 {
+        color: red;
+      }
+      #head2 {
+        color: blue;
+      }
+      #head3 {
+        color: green;
+      }
+
+      .myname {
+        color: white;
+        -webkit-text-stroke: 2px crimson;
+        font-family: Arial black;
+        text-align: Center;
+        font-size: 100px;
+        margin: 50px 0px;
+        text-shadow: 0px 0px 20px red;
+      }
+      .rotate-center {
+        -webkit-animation: rotate-center 2s ease-in-out both;
+        animation: rotate-center 2s ease-in-out both;
+      }
+
+      .container{
+        height: 700px;
+        width: 500px;
+        border: 10px solid black;
+        margin: 200px 500px;
+        overflow: hidden;
+        
+      }
+      .kenburns-top {
+	-webkit-animation: kenburns-top 5s ease-out both;
+	        animation: kenburns-top 5s ease-out both;
+    }
+
+    
+
+      @-webkit-keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes rotate-center {
+        0% {
+          -webkit-transform: rotate(0);
+          transform: rotate(0);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+            transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+            transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+
+.tiger{
+        margin: 0px 600px;
+        transition-duration: 0.5s;
+    }
+    .tiger:hover{
+        border-radius: 50%;
+        box-shadow: 0px 0px 50px blue;
+        transform: translate(50px, -50px);
+        transform: rotate(-30deg);
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1 class="headings" id="head1">How are you?</h1>
+    <h1 class="headings" id="head2">How are you?</h1>
+    <h1 class="headings" id="head3">How are you?</h1>
+
+    <p class="myname rotate-center">Gaurav</p>
+
+    <p><b>This text is bold</b></p>
+    <p><i>This text is italic</i></p>
+    <p><u>this text is in underline</u></p>
+    <p><insert>this text is in insert tag</insert></p>
+    <p><tt>Monospace Tag (having equal width of each character)</tt></p>
+    <p><strike>Strike Tag</strike></p>
+    <p><del>Delete Tag</del></p>
+    <p><mark>Mark Tag</mark></p>
+    <p>Superscript <sup>Tag</sup></p>
+    <p>Subscript <sub>Tag</sub></p>
+    <p><small>Small Tag </small></p>
+    <p><big>Big Tag </big></p>
+    <p>
+        <pre>
+            class Demo1{
+                public static void main(String [] args)
+                {
+                    System.out.println("hello World");
+                }
+            }
+        </pre>
+    </p>
+
+    <div class="container">
+        <img class="kenburns-top"  src="./ai-generated-8520530_1280.png" alt="" height="700" width="500">
+    </div>
+
+    <img class="tiger" src="./ai-generated-8520530_1280.png" alt="" height="500" width="350">
+  
+  </body>
+</html>
