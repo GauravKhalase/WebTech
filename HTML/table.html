@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            background-image: url("https://imgs.search.brave.com/K6USQyCewjWBdw2Pd_icNInz4DCDPfb0798GDmVXgq4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTU1/Mjc3NTc1L3Bob3Rv/L2dydW5nZS1iYWNr/Z3JvdW5kLndlYnA_/Yj0xJnM9MTcwNjY3/YSZ3PTAmaz0yMCZj/PXhIWklBWWdCVF81/TGFJemdrdzl0Wkpy/MUVwQ2lFM0xySlFI/SktZZE00Snc9");
+            background-repeat: no-repeat;
+            background-size:cover;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        tr:hover{
+            background-color:crimson;
+            color: white;
+        }
+        tr{
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employees Data</h1>
+    <table border="2px" cellspacing="0px" cellpadding="20px" width="100%">
+        <thead>
+            <tr>
+                <th>Srno</th>
+                <th>Emploee Name</th>
+                <th>id</th>
+                <th>Designation</th>
+                <th>salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Gaurav</td>
+                <td>1234</td>
+                <td>Full Stack Java Developer</td>
+                <td>1,00,000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Ayush</td>
+                <td>3546</td>
+                <td>React Developer</td>
+                <td>50,000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Tejas</td>
+                <td>7895</td>
+                <td>Python Developer</td>
+                <td>60,000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td>
+                <td>Mahesh</td>
+                <td>4568</td>
+                <td>Java Developer</td>
+                <td>80,000</td>
+            </tr>
+            <tr>
+                <td>Anish</td>
+                <td>8546</td>
+                <td>Java Developer</td>
+                <td>70,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>3,60,000</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
